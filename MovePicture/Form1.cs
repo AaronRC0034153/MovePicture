@@ -41,5 +41,6 @@ namespace MovePicture
         {
             man.Location = new Point(man.Location.X + 5, man.Location.Y);
         }
+
     }
 }
