@@ -155,6 +155,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "up f";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -173,6 +174,7 @@
             this.button12.TabIndex = 12;
             this.button12.Text = "left f";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -192,6 +194,7 @@
             this.button14.TabIndex = 14;
             this.button14.Text = "down f";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Form1
             // 

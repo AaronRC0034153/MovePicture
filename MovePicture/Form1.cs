@@ -86,5 +86,32 @@ namespace MovePicture
                 await Task.Delay(100);
             }
         }
+
+        private async void button14_Click(object sender, EventArgs e)
+        {
+            while (man.Location.Y + 5 < ClientRectangle.Height - man.Height)
+            {
+                man.Location = new Point(man.Location.X, man.Location.Y + 5);
+                await Task.Delay(100);
+            }
+        }
+
+        private async void button12_Click(object sender, EventArgs e)
+        {
+            while (man.Location.X - 5 >0)
+            {
+                man.Location = new Point(man.Location.X - 5, man.Location.Y);
+                await Task.Delay(100);
+            }
+        }
+
+        private async void button10_Click(object sender, EventArgs e)
+        {
+            while (man.Location.Y - 5 >0)
+            {
+                man.Location = new Point(man.Location.X, man.Location.Y - 5);
+                await Task.Delay(100);
+            }
+        }
     }
 }
