@@ -42,5 +42,15 @@ namespace MovePicture
             man.Location = new Point(man.Location.X + 5, man.Location.Y);
         }
 
+        private async void button5_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                man.Location = new Point(man.Location.X + 2, man.Location.Y);
+                await Task.Delay(50);
+
+            }
+            
+        }
     }
 }
