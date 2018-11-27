@@ -50,7 +50,12 @@ namespace MovePicture
                 await Task.Delay(20);
 
             }
-            
+            for (int i = 0; i < 100; i++)
+            {
+                man.Location = new Point(man.Location.X - 2, man.Location.Y);
+                await Task.Delay(20);
+
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
