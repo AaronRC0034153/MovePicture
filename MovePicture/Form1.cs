@@ -98,7 +98,7 @@ namespace MovePicture
 
         private async void button12_Click(object sender, EventArgs e)
         {
-            while (man.Location.X - 5 >0)
+            while (man.Location.X - 5 > 0)
             {
                 man.Location = new Point(man.Location.X - 5, man.Location.Y);
                 await Task.Delay(100);
@@ -107,11 +107,26 @@ namespace MovePicture
 
         private async void button10_Click(object sender, EventArgs e)
         {
-            while (man.Location.Y - 5 >0)
+            while (man.Location.Y - 5 > 0)
             {
                 man.Location = new Point(man.Location.X, man.Location.Y - 5);
                 await Task.Delay(100);
             }
+        }
+
+        private async void button17_Click(object sender, EventArgs e)
+        {
+            while (man.Location.X + 5 < ClientRectangle.Width - man.Width)
+            {
+                man.Location = new Point(man.Location.X + 5, man.Location.Y);
+                await Task.Delay(100);
+            }
+            while (man.Location.Y - 5 > 0)
+            {
+                man.Location = new Point(man.Location.X, man.Location.Y - 5);
+                await Task.Delay(100);
+            }
+            
         }
     }
 }
