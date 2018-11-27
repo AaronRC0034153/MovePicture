@@ -47,10 +47,30 @@ namespace MovePicture
             for (int i = 0; i < 100; i++)
             {
                 man.Location = new Point(man.Location.X + 2, man.Location.Y);
-                await Task.Delay(50);
+                await Task.Delay(20);
 
             }
             
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            man.Location = new Point(man.Location.X - 5, man.Location.Y - 5);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            man.Location = new Point(man.Location.X + 5, man.Location.Y - 5);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            man.Location = new Point(man.Location.X - 5, man.Location.Y + 5);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            man.Location = new Point(man.Location.X + 5, man.Location.Y + 5);
         }
     }
 }
